@@ -1,0 +1,71 @@
+#%RAML 0.8
+title: SAMPLE API 
+version: 1.0.0 development
+baseUri: http://localhost:9080/api
+/employee :
+  displayName: EmployeActions
+  description: To get the details of the employes stored in mysql db.
+  get:
+    description: To get the list of all employees.
+    responses:
+      200 : 
+        body:
+          application/json:
+            example: !include json/GetAllEmployes.json
+      404 :
+        body:          
+          application/json:
+            example: !include json/error-404.json  
+      500 :
+        body:
+          application/json:
+            example: !include json/error-500.json
+  post:
+    description: To get the employe details with name.
+    body:
+    responses:
+      200 : 
+        body:
+          application/json:
+            example: !include json/GetAllEmployes.json
+      404 :
+        body:          
+          application/json:
+            example: !include json/error-404.json  
+      500 :
+        body:
+          application/json:
+            example: !include json/error-500.json
+/address:
+  displayName: AddressActions
+  description: The get all the address stored in mysql db.
+  get:
+    description: To get the list of all Address.
+    responses:
+      200 : 
+        body:
+          application/json:
+            example: !include json/GetAllAddress.json
+      404 :
+        body:          
+          application/json:
+            example: !include json/error-404.json  
+      500 :
+        body:
+          application/json:
+            example: !include json/error-500.json
+  post:
+    description: To get the address by name.
+    responses:
+      200 : 
+        body:
+          application/json:
+            example: !include json/GetAllAddress.json
+      404 :
+        body:          
+          application/json:
+            example: !include json/error-404.json  
+      500 :
+        body:
+          application/json:
+            example: !include json/error-500.json

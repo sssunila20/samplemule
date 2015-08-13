@@ -1,0 +1,8 @@
+{"employees":
+ [
+   {"emp_id":"101","name":"John","designation":"Manager","email_id":"johncena@gmail.com","Phone.No":"343539"},
+    {"emp_id":"102","name":"Steven","designation":"Developer","email_id":"stevenmart@gmail.com","Phone.No":"343546"},
+     {"emp_id":"103","name":"Janifer","designation":"Analyst","email_id":"Janiferdeck@gmail.com","Phone.No":"323546"},
+      {"emp_id":"104","name":"Lucy","designation":"Sr.Developer","email_id":"lucyanabela@gmail.com","Phone.No":"333546"}
+ ]
+}
